@@ -1,0 +1,5 @@
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    /* color: aquamarine; */
+}

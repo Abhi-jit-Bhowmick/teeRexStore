@@ -1,0 +1,61 @@
+.nav-container {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100vw;
+    background-color: rgb(3, 3, 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ececec;
+    color: aquamarine;
+}
+
+.nav-inner {
+    padding: 0 2rem;
+    width: 100%;
+    display: flex;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo span {
+    font-weight: 600;
+    color: beige;
+    font-size: 1.3rem;
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-icon {
+    font-size: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+.logo{
+    text-decoration: none;
+}
+.link {
+    text-decoration: none;
+    color:aqua;
+}
