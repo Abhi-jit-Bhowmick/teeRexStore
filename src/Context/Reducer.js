@@ -11,7 +11,7 @@ export const reducerFunc = (state, action) => {
             return {
                 ...state, cart: state.cart.filter(prod =>
                     prod.id === action.payload.id && prod.quantity > prod.qty ?
-                        prod.qty +=0.5 : prod.qty
+                        prod.qty +=1 : prod.qty
                 )
             }
             // return {
@@ -34,7 +34,7 @@ export const reducerFunc = (state, action) => {
                 ...state,
                 cart: state.cart.filter(p => {
                     if (p.id === action.payload.id && p.qty > 0) {
-                        return p.qty -= 0.5
+                        return p.qty -= 1
                     } else {
                         return p.qty
                     }
