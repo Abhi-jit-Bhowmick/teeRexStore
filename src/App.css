@@ -185,3 +185,6 @@
  
   font-weight: 600;
 }
+.quantity button:disabled{
+  cursor:not-allowed;
+}

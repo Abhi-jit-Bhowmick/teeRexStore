@@ -52,7 +52,7 @@ function ProductCard({ productInformation, handleAddtoCart, handleCheckOut }) {
                             state.cart.some((item) => item.id === id) ? (
                                 <button type='click' onClick={handleCheckOut}>Checkout</button>
                             ) : (
-                                <button type='click' onClick={(item)=>handleAddtoCart(item)}>Add to Cart</button>
+                                <button type='click' disabled={quantity === 0} onClick={(item)=>handleAddtoCart(item)}>Add to Cart</button>
                             )
                         }
                     </div>
