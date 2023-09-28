@@ -157,7 +157,7 @@ function ProductPage() {
 
 
             <SideNav
-                className={!clickFilter ? "filter-clicked" : ""}
+                className={clickFilter ? "filter-clicked" : ""}
                 products={products}
                 handleCheckBox={(e) => handleCheckBox(e)}
             />
