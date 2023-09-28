@@ -11,23 +11,9 @@ export const reducerFunc = (state, action) => {
             return {
                 ...state, cart: state.cart.filter(prod =>
                     prod.id === action.payload.id && prod.quantity > prod.qty ?
-                        prod.qty +=1 : prod.qty
+                        prod.qty += 1 : prod.qty
                 )
             }
-            // return {
-            //     ...state,
-            //     cart: state.cart.filter(p => {
-
-            //         if (p.id === action.payload.id && p.qty < p.quantity) {
-            //             return p.qty + 1
-            //          } 
-            //         else {
-            //         console.log("STATE.CART.QTY AFTER 2::",p.qty)
-            //             return p.qty
-            //         }
-            //     }
-            //     )
-            // }
 
         } case "decrement": {
             return {
@@ -49,7 +35,7 @@ export const reducerFunc = (state, action) => {
                 )
             }
         }
-         default:{
+        default: {
             return state
         }
     }

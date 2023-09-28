@@ -147,8 +147,8 @@ function ProductPage() {
     }, [filterCheckBox])
 
     return (
-        console.log("FILTERCHECKBOX::", filterCheckBox),
-        console.log("FILTERPRODUCTS::", filterProducts),
+        // console.log("FILTERCHECKBOX::", filterCheckBox),
+        // console.log("FILTERPRODUCTS::", filterProducts),
         <>
             {/* <TopNav cart={[1,2,3]}/> */}
 
@@ -176,7 +176,7 @@ function ProductPage() {
                         )
                         ) : (
                             <div className='home-inner-no-product-found'>
-                                <div className='no-product-emoji'><BsEmojiNeutral/></div>
+                                <div className='no-product-emoji'><BsEmojiNeutral /></div>
                                 <div className='no-product-found'>
                                     No Product Found
                                 </div>

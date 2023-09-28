@@ -63,7 +63,8 @@
     background-color: aqua;
     color: white;
 }
-.product_card_button button:disabled{
-    cursor:not-allowed;
-    
+
+.product_card_button button:disabled {
+    cursor: not-allowed;
+
 }
