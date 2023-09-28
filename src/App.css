@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 5px;
 }
 
 .search-bar-container input {
@@ -193,11 +193,21 @@
   cursor: not-allowed;
 }
 
+.search-icon {
+  padding: 2px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
 .filter {
   padding: 2px;
   display: none;
   background-color: black;
   color: white;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 @media screen and (max-width:500px) {
@@ -274,21 +284,19 @@
   }
 
   .empty-cart-text {
-    /* alig */
-    /* text-align: center; */
     text-align: auto;
     font-weight: 600;
   }
 
   .search-bar-container {
-
+    gap: 5px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     height: 5rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    justify-content: space-between;
     gap: 20px;
   }
 
@@ -298,7 +306,7 @@
     min-width: 2rem;
     width: 90%;
     font: inherit;
-    padding: 7px;
+    padding: 10px;
     border: none;
     border-bottom: 1px solid #ececec;
   }

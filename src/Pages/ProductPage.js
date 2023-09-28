@@ -11,6 +11,9 @@ import { CartContext } from '../Context/CartContext';
 import SearchBar from '../Components/SearchBar/SearchBar';
 import { BsEmojiNeutral } from 'react-icons/bs';
 import { FaFilter } from 'react-icons/fa';
+import { FiSearch } from 'react-icons/fi';
+
+
 
 
 
@@ -171,7 +174,7 @@ function ProductPage() {
                         inputValue={filterCheckBox.searchInput}
                         handleSearch={(e) => handleSearch(e)}
                     />
-
+                    <FiSearch className='search-icon' />
                     <FaFilter
                         className='filter'
                         onClick={() => setclickfilter(!clickFilter)}
