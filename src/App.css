@@ -212,16 +212,18 @@
 
 @media screen and (max-width:500px) {
   .side-nav-container {
-    /* float: none; */
     display: none;
   }
 
   .filter-clicked {
+    margin: 1rem;
     display: block;
     position: fixed;
-    width: 100vw;
-    top: 10rem;
-    background-color: #d1f6ff;
+    width: 90vw;
+    top: 8rem;
+    background-color: #ecf8fc;
+    border-radius: 20px 0 20px 0;
+    border: 1px solid #648996;
   }
 
   .home-container {
@@ -229,7 +231,6 @@
     margin-left: 1rem;
     width: 100vw;
     margin-top: 5rem;
-    /* background-color: blue; */
   }
 
   /* .cart-container {
