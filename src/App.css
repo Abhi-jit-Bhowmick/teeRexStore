@@ -194,7 +194,10 @@
 }
 
 .filter {
+  padding: 2px;
   display: none;
+  background-color: black;
+  color: white;
 }
 
 @media screen and (max-width:786px) {
