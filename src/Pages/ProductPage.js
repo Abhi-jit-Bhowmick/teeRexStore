@@ -10,6 +10,8 @@ import ProductCard from '../Components/ProductCard/ProductCard';
 import { CartContext } from '../Context/CartContext';
 import SearchBar from '../Components/SearchBar/SearchBar';
 import { BsEmojiNeutral } from 'react-icons/bs';
+import { FaFilter } from 'react-icons/fa';
+
 
 
 
@@ -17,6 +19,7 @@ function ProductPage() {
     const [products, setProducts] = useState(initialProductsState);
     const [filterCheckBox, setFilterCheckBox] = useState(initialFilterCheckBox)
     const [filterProducts, setFilterProducts] = useState([])
+    const [clickFilter, setclickfilter] = useState(false)
     const { dispatch } = useContext(CartContext)
 
     const handleSearch = (e) => {
@@ -152,10 +155,15 @@ function ProductPage() {
         <>
             {/* <TopNav cart={[1,2,3]}/> */}
 
+
             <SideNav
+                className={!clickFilter ? "filter-clicked" : ""}
                 products={products}
                 handleCheckBox={(e) => handleCheckBox(e)}
             />
+
+
+
 
             <div className='home-container'>
                 <div className='search-bar-container'>
@@ -163,6 +171,12 @@ function ProductPage() {
                         inputValue={filterCheckBox.searchInput}
                         handleSearch={(e) => handleSearch(e)}
                     />
+
+                    <FaFilter
+                        className='filter'
+                        onClick={() => setclickfilter(!clickFilter)}
+                    />
+
                 </div>
                 <div className="home-inner">
                     {filterProducts.length >= 1 ?

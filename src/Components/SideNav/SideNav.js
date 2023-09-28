@@ -2,11 +2,11 @@ import React from 'react'
 import "./SideNav.css"
 import CheckBox from '../Filter/CheckBox'
 
-function SideNav({  handleCheckBox,products }) {
-    const {color, gender, type, price} = products
+function SideNav({ handleCheckBox, products, className }) {
+    const { color, gender, type, price } = products
     return (
         // console.log(color),
-        <div className='side-nav-container'>
+        <div className={`side-nav-container ${className}`}>
             <div className='side-nav-inner'>
                 <div className="side-nav-inner-block">
                     <h5>Color</h5>

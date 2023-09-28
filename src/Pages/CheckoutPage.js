@@ -44,7 +44,7 @@ function CheckoutPage() {
                       </div>
                       <div className="quantity">
                         <button
-                        disabled={item.qty === item.quantity}
+                          disabled={item.qty === item.quantity}
                           className="inc-dec-btn"
                           onClick={() => handleIncrement(item)}
                         >
@@ -87,7 +87,7 @@ function CheckoutPage() {
               <div className="empty-cart-emoji">
                 <BsCartXFill />
               </div>
-              <div className="empty-cart-text">Your Cart is Empty</div>
+              <div className="empty-cart-text">Your Cart is Empty .....</div>
             </div>
           )}
         </div>

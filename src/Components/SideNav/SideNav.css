@@ -1,4 +1,4 @@
-.side-nav-container{
+.side-nav-container {
     position: fixed;
     top: 5rem;
     left: 0;
@@ -7,18 +7,21 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     overflow-y: auto;
     z-index: 100;
-    
-    
+
+
 }
-.side-nav-inner{
+
+.side-nav-inner {
     padding: 2rem;
     max-height: auto;
     /* overflow-y: scroll; */
 }
-.side-nav-inner h5{
+
+.side-nav-inner h5 {
     margin: 0;
     border-bottom: 1px solid black;
 }
-.side-nav-inner-block{
+
+.side-nav-inner-block {
     margin: 1rem;
 }
