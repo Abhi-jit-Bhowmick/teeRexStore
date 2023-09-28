@@ -156,17 +156,11 @@ function ProductPage() {
         // console.log("FILTERCHECKBOX::", filterCheckBox),
         // console.log("FILTERPRODUCTS::", filterProducts),
         <>
-            {/* <TopNav cart={[1,2,3]}/> */}
-
-
             <SideNav
                 className={clickFilter ? "filter-clicked" : ""}
                 products={products}
                 handleCheckBox={(e) => handleCheckBox(e)}
             />
-
-
-
 
             <div className='home-container'>
                 <div className='search-bar-container'>

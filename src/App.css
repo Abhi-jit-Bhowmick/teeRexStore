@@ -302,8 +302,8 @@
 
   .search-bar-container input {
     margin-right: 2rem;
-    max-width: 380px;
-    min-width: 2rem;
+    /* max-width: 380px;
+    min-width: 2rem; */
     width: 90%;
     font: inherit;
     padding: 10px;
@@ -313,5 +313,9 @@
 
   .filter {
     display: block;
+  }
+
+  .products {
+    display: none;
   }
 }
