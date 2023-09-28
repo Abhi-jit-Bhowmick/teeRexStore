@@ -87,7 +87,7 @@ function CheckoutPage() {
               <div className="empty-cart-emoji">
                 <BsCartXFill />
               </div>
-              <div className="empty-cart-text">Your Cart is Empty .....Abhi</div>
+              <div className="empty-cart-text">Your Cart is Empty.....</div>
             </div>
           )}
         </div>
